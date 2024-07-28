@@ -33,15 +33,28 @@
             timg.style.display = "block"
      }
 
+
         function mais() {
-            tabela.style.display = "block"
+            tabela1.style.display = "block"
             maisi.style.display = "none"
             minos.style.display = "block"
      }
         function menos() {
-            tabela.style.display = "none"
+            tabela1.style.display = "none"
             maisi.style.display = "block"
             minos.style.display = "none"
+     }
+
+
+        function conheça() {
+            tabela2.style.display = "block"
+            conheçan.style.display = "none"
+            conheçaMn.style.display = "block"
+     }
+        function conheçaM() {
+            tabela2.style.display = "none"
+            conheçan.style.display = "block"
+            conheçaMn.style.display = "none"
      }
     </script>
     <header>
@@ -53,7 +66,7 @@
              <hr id="divisoria"> 
             <div id="tese">
                 <p id="mp"><strong>Nosso local de descanso</strong></p>
-                <p>Faça seu corte de cabelo, sombrancelha ou barba</p>
+                <p>Faça seu corte de cabelo, sombrancelha e barba</p>
             </div>
         </div>
         <div id="img">
@@ -67,8 +80,8 @@
                     <img src="imagens/kG.jpg" alt="simg" id="simg">
                 </picture> <!--second img-->
                 <picture>
-                    <source media="(max-width: 850px)" srcset="imagens/kP.jpg">
-                    <img src="imagens/kG.jpg" alt="simg" id="timg">
+                    <source media="(max-width: 850px)" srcset="imagens/koP.jpg">
+                    <img src="imagens/koG.jpg" alt="simg" id="timg">
                 </picture> <!--third img-->
             </div>
             <div id="butao">
@@ -80,34 +93,45 @@
         </div>
     </header>
     <main>
-        <article id="ps"> <!-- primeira sessão-->
-            <div id="txs1"> <!--Texto da primeira sessão-->
+        <article class="ss"> <!-- primeira sessão-->
+            <div class="txs"> <!--Texto da primeira sessão-->
                 <div id="subb">
                     <h1>O melhor para você!</h1>
-                    <p>Os preços mais atrativos para você e com uma qualidade impécavel <br> Cortes por R$15</p>
+                    <p>Os preços mais atrativos para você e com uma qualidade impécavel</p>
                 </div>
                 <div>
-                    <button onclick="mais()" id="maisi" class="maismenos">Saiba mais</button>
-                    <button onclick="menos()" id="minos" class="maismenos">Saiba menos</button>
-                    <div id="tabela">
+                    <button onclick="mais()" id="maisi" class="maismenos">Mostrar mais</button>
+                    <button onclick="menos()" id="minos" class="maismenos">Mostrar menos</button>
+                    <div class="tabela" id="tabela1">
+                        <p>Cortes por R$15</p>
                         <p>Barba R$10</p>
                         <p>Sombrancelha R$5</p>
                     </div>
                 </div>
             </div>
-            <div id="imgs1">
-                <img src="imagens/abu.jpg" alt="cortes">
+            <div class="imgss">
+                <img src="imagens/kG.jpg" alt="cortes">
             </div>
         </article>
-        <article id="ss"> <!-- segunda sessão-->
-              <div>
-                <img src="" alt="">
+        <article class="ss"> <!-- segunda sessão-->
+            <div class="imgss">
+                <img src="imagens/kG.jpg" alt="" id="imgs2">
             </div>
-            <div>
-                <p></p>
+            <div class="txs"> <!-- texto da segunda sessão -->
+                <h1>Cabelereiro com curso!</h1>
+                <p>Nosso profissional tem curso e esta adquirindo mais experiencia <br> conheça-o melhor!</p>
+                <div>
+                    <button onclick="conheça()" id="conheçan" class="maismenos">Mostrar mais</button>
+                    <button onclick="conheçaM()" id="conheçaMn" class="maismenos">Mostrar menos</button>
+                    <div class="tabela" id="tabela2">
+                        <a href="https://www.instagram.com/zequi_n7?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="imagens/inst.webp" alt="" class="ico"></a>
+                        <a href=""><img src="" alt="" class="ico"></a>
+                        <a href=""><img src="" alt="" class="ico"></a>
+                    </div>
+                </div>
             </div>
         </article>
-        <article id="ts"> <!-- terceira sessão-->
+        <article class="ss" id="ts"> <!-- terceira sessão-->
             <div>
                 <video src=""></video>
             </div>

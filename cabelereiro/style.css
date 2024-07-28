@@ -21,6 +21,8 @@ header {
     display: flex;
     color: var(--cor03);
     text-align: center;
+    align-items: center;
+    justify-content: space-around;
 }
 #titulo > h1 {
     font-family: Arial, Helvetica, sans-serif;
@@ -39,11 +41,12 @@ header {
     border-radius: 20px;
 }
 #texto {
-    min-width: 50%;
+    align-self: start;
+    min-width: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
 }
 #titulo {
     margin-top: 20px;
@@ -68,38 +71,35 @@ header {
     line-height: 1.2em;
 }
 #img {
+    max-width: 55%;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 50%;
     flex-direction: column;
+    flex-grow: 2;
 }
 #fimg {
     min-height:200px;
-    min-width: 100px;
-    max-width: 400px;
     margin: 0;
     margin-top: 10px;
-    border-radius: 50px;
-    border: 2px solid white;
+    border-radius: 30px;
+    border: 1.5px solid rgba(255, 255, 255, 0.26);
 }
 #simg {
     min-height:200px;
-    min-width: 100px;
-    max-width: 400px;
     margin: 0;
     margin-top: 10px;
-    border-radius: 50px;
-    border: 2px solid white;
+    border-radius: 30px;
+    border: 1.5px solid rgba(255, 255, 255, 0.26);
+    display: none;
 }
 #timg {
     min-height:200px;
-    min-width: 100px;
-    max-width: 400px;
     margin: 0;
     margin-top: 10px;
-    border-radius: 50px;
-    border: 2px solid white;
+    border-radius: 30px;
+    border: 1.5px solid rgba(255, 255, 255, 0.26);
+    display: none;
 }
 input {
     width: 15px;
@@ -117,12 +117,6 @@ input :hover {
     border-radius: 50px;
     border: 2px solid white;
 }
-#simg {
-    display: none;
-}
-#timg {
-    display: none;
-}
 main {
     background-color: var(--cor05);   
     color: var(--cor1); 
@@ -133,16 +127,22 @@ article {
     margin-bottom: 50px;
     box-shadow: 0px 5px 2px var(--cor04);
 }
-#ps {
+.ss {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     flex-flow: wrap;
 }
+#tabela {
+    margin-top: 10px;
+    background-color: var(--cor05);
+    padding: 10px;
+    border-radius: 10px;
+}
 #ts {
     margin-bottom: 0px;
 }
-#txs1 {
+.txs {
     display: grid;
     text-align: center;
     place-items: center;
@@ -166,24 +166,34 @@ article {
 #minos {
     display: none;
 }
-#tabela {
-    margin-top: 10px;
+#tabela1 {
     display: none;
-    background-color: var(--cor05);
-    padding: 10px;
-    border-radius: 10px;
 }
-#imgs1 {
+.imgss {
     min-width: 200px;
     max-width: 500px;
 }
-#imgs1 > img {
-    max-width: 50%;
+.imgss > img {
+    max-width: 70%;
     margin: auto;
     display: block;
     margin-top: 10px;
     border-radius: 5px 10px;
     margin-bottom: 20px;
+}
+#imgs2 {
+    border-radius: 500px;
+}
+#conheçaMn {
+    display: none;
+}
+#tabela2 {
+    margin-top: 5px;
+    display: none;
+}
+.ico{
+    max-width: 30px;
+    max-height: 30px;
 }
 footer {
     background-color: var(--cor0);
