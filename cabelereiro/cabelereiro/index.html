@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EZ cortes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+         function trocar1() {
+            document.getElementById ("fimg");
+            document.getElementById ("simg");
+            document.getElementById ("timg");
+            fimg.style.display = "block"
+            simg.style.display = "none"
+            timg.style.display = "none"
+     }
+         function trocar2() {
+            document.getElementById ("fimg");
+            document.getElementById ("simg");
+            document.getElementById ("timg");
+            fimg.style.display = "none"
+            simg.style.display = "block"
+            timg.style.display = "none"
+     }
+         function trocar3() {
+            document.getElementById ("fimg");
+            document.getElementById ("simg");
+            document.getElementById ("timg");
+            fimg.style.display = "none"
+            simg.style.display = "none"
+            timg.style.display = "block"
+     }
+
+
+        function mais() {
+            tabela1.style.display = "block"
+            maisi.style.display = "none"
+            minos.style.display = "block"
+     }
+        function menos() {
+            tabela1.style.display = "none"
+            maisi.style.display = "block"
+            minos.style.display = "none"
+     }
+    </script>
+    <header>
+        <div id="texto">
+            <div id="titulo">
+                <img src="imagens/logoBig.png" alt="logotipo" id="logo">
+                <h1>Conheça o nosso salão</h1>
+            </div>
+             <hr id="divisoria"> 
+            <div id="tese">
+                <p id="mp"><strong>Nosso local de descanso</strong></p>
+                <p>Faça seu corte de cabelo, sombrancelha e barba</p>
+            </div>
+        </div>
+        <div id="img">
+            <div id="imgs">
+                <picture>
+                    <source media="(max-width: 850px)" srcset="imagens/fP.jpg">
+                    <img src="imagens/fG.jpg" alt="fimg" id="fimg">
+                </picture> <!--first img-->
+                <picture>
+                    <source media="(max-width: 850px)" srcset="imagens/kP.jpg">
+                    <img src="imagens/kG.jpg" alt="simg" id="simg">
+                </picture> <!--second img-->
+                <picture>
+                    <source media="(max-width: 850px)" srcset="imagens/koP.jpg">
+                    <img src="imagens/koG.jpg" alt="simg" id="timg">
+                </picture> <!--third img-->
+            </div>
+            <div id="butao">
+                <input type="radio" name="radio-btn" id="radio01" onclick="trocar1()">
+                <input type="radio" name="radio-btn" id="radio02" onclick="trocar2()">
+                <input type="radio" name="radio-btn" id="radio03" onclick="trocar3()">
+            </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article class="ss"> <!-- primeira sessão-->
+            <div class="txs"> <!--Texto da primeira sessão-->
+                <div id="subb">
+                    <h1>O melhor para você!</h1>
+                    <p>Os preços mais atrativos para você e com uma qualidade impécavel</p>
+                </div>
+                <div>
+                    <button onclick="mais()" id="maisi" class="maismenos">Mostrar mais</button>
+                    <button onclick="menos()" id="minos" class="maismenos">Mostrar menos</button>
+                    <div class="tabela" id="tabela1">
+                        <p>Cortes por R$15</p>
+                        <p>Barba R$10</p>
+                        <p>Sombrancelha R$5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="imgss">
+                <img src="imagens/kG.jpg" alt="cortes">
+            </div>
+        </article>
+        <article class="ss"> <!-- segunda sessão-->
+            <div class="imgss">
+                <img src="imagens/kG.jpg" alt="" id="imgs2">
+            </div>
+            <div class="txs"> <!-- texto da segunda sessão -->
+                <h1>Cabelereiro com curso!</h1>
+                <p>Nosso profissional tem curso e esta adquirindo mais experiencia <br> conheça-o melhor!</p>
+                    <div class="tabela" id="tabela2">
+                        <a href="https://www.instagram.com/zequi_n7?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="imagens/inst.webp" alt="" class="ico"></a>
+                        <a href=""><img src="" alt="" class="ico"></a>
+                        <a href=""><img src="" alt="" class="ico"></a>
+                    </div>
+            </div>
+        </article>
+        <article class="ss" id="ts"> <!-- terceira sessão-->
+            <div>
+                <video src=""></video>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p id="tf"> <!--Texto do footer-->
+
+        </p>
+    </footer>
+</body>
+</html>
