@@ -19,6 +19,7 @@ header {
     background-color: var(--cor0);
     min-height: 300px;
     display: flex;
+    flex-wrap: wrap;
     color: var(--cor03);
     text-align: center;
     align-items: center;
@@ -183,13 +184,6 @@ article {
 }
 #imgs2 {
     border-radius: 500px;
-}
-#conheçaMn {
-    display: none;
-}
-#tabela2 {
-    margin-top: 5px;
-    display: none;
 }
 .ico{
     max-width: 30px;
